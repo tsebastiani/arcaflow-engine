@@ -1,0 +1,20 @@
+input:
+  root: RootObject
+  objects:
+    RootObject:
+      id: RootObject
+      properties:
+        name:
+          type:
+            type_id: string
+steps:
+  example:
+    plugin: ghcr.io/janosdebugs/arcaflow-example-plugin
+    # step: step-id if the plugin has more than one step
+    # deploy:
+    #   type: docker|kubernetes
+    #   ... more options
+    input:
+      name: !expr $.input.name
+output:
+  message: !expr $.steps.example.outputs.success.message

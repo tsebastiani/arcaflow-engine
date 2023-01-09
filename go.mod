@@ -15,6 +15,8 @@ require (
 	gopkg.in/yaml.v3 v3.0.1
 )
 
+require go.flow.arcalot.io/podmandeployer v0.0.0-20221219194456-db2df44d5e66
+
 require (
 	github.com/Azure/go-ansiterm v0.0.0-20210617225240-d185dfc1b5a1 // indirect
 	github.com/Microsoft/go-winio v0.6.0 // indirect
